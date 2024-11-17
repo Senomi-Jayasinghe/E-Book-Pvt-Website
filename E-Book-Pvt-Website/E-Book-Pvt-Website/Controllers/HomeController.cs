@@ -13,7 +13,7 @@ namespace E_Book_Pvt_Website.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult CustomerLogin()
         {
             return View();
         }

@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\ESOFT LMU\C#\AD CW2\E-Book-Pvt-Website\E-Book-Pvt-Website\E-Book-Pvt-Website
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/ESOFT LMU/C\#/AD CW2/E-Book-Pvt-Website/E-Book-Pvt-Website/E-Book-Pvt-Website/Views/Home/CustomerLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lckxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ESOFT LMU/C\#/AD CW2/E-Book-Pvt-Website/E-Book-Pvt-Website/E-Book-Pvt-Website/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
