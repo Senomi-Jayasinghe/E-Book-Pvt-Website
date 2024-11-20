@@ -1,0 +1,57 @@
+﻿@model IEnumerable<E_Book_Pvt_Website.Models.Book>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<h1>Books</h1>
+
+<div>
+    <h4>Book List</h4>
+    <hr />
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().book_title)</th>
+                <th>@Html.DisplayNameFor(model => model.First().book_description)</th>
+                <th>@Html.DisplayNameFor(model => model.First().book_publisher)</th>
+                <th>@Html.DisplayNameFor(model => model.First().book_price)</th>
+                <th>@Html.DisplayNameFor(model => model.First().book_ISBN)</th>
+                <th>@Html.DisplayNameFor(model => model.First().book_author_id)</th>
+                <th>@Html.DisplayNameFor(model => model.First().book_image)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => book.book_title)</td>
+                    <td>@Html.DisplayFor(modelItem => book.book_description)</td>
+                    <td>@Html.DisplayFor(modelItem => book.book_publisher)</td>
+                    <td>@Html.DisplayFor(modelItem => book.book_price)</td>
+                    <td>@Html.DisplayFor(modelItem => book.book_ISBN)</td>
+                    <td>@Html.DisplayFor(modelItem => book.book_author_id)</td>
+                    <td>
+                        @if (book.book_image != null)
+                        {
+                            <img src="@Url.Action("GetImage", "Books", new { id = book.book_id })" alt="Book Image" style="max-width: 100px; max-height: 100px;" />
+                        }
+                        else
+                        {
+                            <span>No Image</span>
+                        }
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@book.book_id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@book.book_id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@book.book_id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div>
+    <a asp-action="Create">Create New Book</a>
+</div>
