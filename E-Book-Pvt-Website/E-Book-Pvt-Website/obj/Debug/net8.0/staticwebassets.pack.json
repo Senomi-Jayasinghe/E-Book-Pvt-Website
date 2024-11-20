@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\E-Book-Pvt-Website.bundle.scp.css"
     },
     {
+      "Id": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\wwwroot\\Assets\\BOOKS.jpg",
+      "PackagePath": "staticwebassets\\Assets\\BOOKS.jpg"
+    },
+    {
       "Id": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

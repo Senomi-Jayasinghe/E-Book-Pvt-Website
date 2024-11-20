@@ -8,7 +8,7 @@ namespace E_Book_Pvt_Website.Models
         public int customer_id { get; set; }
         [Required]
         public string customer_name { get; set; }
-        public int customer_phoneno { get; set; }
+        public string customer_phoneno { get; set; }
         public string customer_address { get; set; }
         public string customer_email { get; set; }
         public byte[] customer_password { get; set; }
