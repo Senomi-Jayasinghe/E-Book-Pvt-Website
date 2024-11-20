@@ -11,5 +11,6 @@ namespace E_Book_Pvt_Website.Data
 
         // Define DbSets for your tables
         public DbSet<Book> Book { get; set; }
+        public DbSet<Customer> Customer { get;}
     }
 }
