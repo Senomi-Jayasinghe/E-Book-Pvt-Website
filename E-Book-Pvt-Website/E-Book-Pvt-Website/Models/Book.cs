@@ -12,7 +12,7 @@ namespace E_Book_Pvt_Website.Models
         public string book_publisher { get; set; }
         public double book_price { get; set; }
         public int book_ISBN { get; set; }
-        public int? book_author_id { get; set; }
-        public byte[]? book_image { get; set; }
+        public int book_author_id { get; set; }
+        public byte[] book_image { get; set; }
     }
 }

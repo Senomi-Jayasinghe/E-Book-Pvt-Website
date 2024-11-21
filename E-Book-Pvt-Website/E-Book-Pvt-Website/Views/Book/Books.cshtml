@@ -13,19 +13,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.book_title)
+                Title
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.book_publisher)
+                Publisher
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.book_price)
+                Price
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.book_ISBN)
+                ISBN
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.book_author_id)
+                Author
             </th>
             <th></th>
         </tr>
@@ -47,7 +47,7 @@
                     @Html.DisplayFor(modelItem => item.book_ISBN)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.book_author_id)
+                    @(ViewBag.AuthorNames[item.book_author_id])
                 </td>
                 <td>
                     <a asp-action="EditBooks" asp-route-id="@item.book_id">Edit</a> |

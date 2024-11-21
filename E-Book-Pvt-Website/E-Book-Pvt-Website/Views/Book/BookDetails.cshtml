@@ -11,43 +11,49 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.book_title)
+            Title:
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.book_title)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.book_description)
+            Description:
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.book_description)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.book_publisher)
+            Publisher:
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.book_publisher)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.book_price)
+            Price:
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.book_price)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.book_ISBN)
+            ISBN:
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.book_ISBN)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.book_author_id)
+            Author:
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.book_author_id)
+        <dd class="col-sm-10">
+            @{
+                int? authorId = Model.book_author_id;
+                string authorName = authorId.HasValue && ViewBag.AuthorNames.ContainsKey(authorId.Value)
+                ? ViewBag.AuthorNames[authorId.Value]
+                : "Unknown"; // or any default text you'd like to display
+            }
+            @authorName
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.book_image)
+            Image:
         </dt>
         <dd class="col-sm-10">
             @if (ViewData["ImageBase64"] != null)
