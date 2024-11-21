@@ -12,6 +12,10 @@ namespace E_Book_Pvt_Website.Controllers
         {
             _context = context;
         }
+        public IActionResult Books()
+        {
+            return View();
+        }
 
         public async Task<IActionResult> BrowseBooks()
         {
