@@ -1,0 +1,48 @@
+﻿@model IEnumerable<E_Book_Pvt_Website.Models.Book>
+
+@{
+    ViewData["Title"] = "BrowseBooks";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        @foreach (var book in Model)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <!-- Book Image -->
+                    <a href="@Url.Action("Details", "Book", new { id = book.book_id })">
+                        <img src="@book.ImageUrl"
+                             alt="@book.book_title - @book.book_author_id - @book.book_ISBN"
+                             class="card-img-top"
+                             style="height: 226px; object-fit: cover;"
+                             onerror="this.src='fallback.jpg';">
+                    </a>
+
+                    <!-- Card Body -->
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-truncate" data-toggle="tooltip" data-placement="bottom" title="@book.book_title">@book.book_title</h5>
+
+                        <p class="card-text text-muted small">
+                            <a href="https://makeenbooks.com/author/index/@book.book_author_id"
+                               class="theme-link"
+                               data-toggle="tooltip"
+                               data-placement="bottom"
+                               title="@book.book_author_id">
+                                By: @book.book_author_id
+                            </a>
+                        </p>
+
+                        <p class="card-text text-danger font-weight-bold">Rs. @book.book_price</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>

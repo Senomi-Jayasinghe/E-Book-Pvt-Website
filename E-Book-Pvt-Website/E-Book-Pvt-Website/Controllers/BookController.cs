@@ -13,7 +13,7 @@ namespace E_Book_Pvt_Website.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Books()
+        public async Task<IActionResult> BrowseBooks()
         {
             var items = await _context.Book.ToListAsync();
             return View(items);
