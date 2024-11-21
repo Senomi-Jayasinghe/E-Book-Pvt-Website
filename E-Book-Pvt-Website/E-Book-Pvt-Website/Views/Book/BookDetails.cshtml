@@ -1,0 +1,60 @@
+﻿@model E_Book_Pvt_Website.Models.Book
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+
+<div>
+    <h4>Book</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.book_title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.book_title)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.book_description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.book_description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.book_publisher)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.book_publisher)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.book_price)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.book_price)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.book_ISBN)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.book_ISBN)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.book_author_id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.book_author_id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.book_image)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.book_image)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.book_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
