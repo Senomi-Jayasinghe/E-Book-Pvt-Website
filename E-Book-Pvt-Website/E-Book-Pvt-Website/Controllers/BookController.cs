@@ -56,6 +56,23 @@ namespace E_Book_Pvt_Website.Controllers
 
             return View(book);
         }
+        public async Task<IActionResult> BookDetails(int id)
+        {
+            var book = await _context.Book.FindAsync(id);
+            if (book == null)
+            {
+                return NotFound();
+            }
+
+            // Convert the image to a base64 string if it exists
+            if (book.book_image != null)
+            {
+                var base64Image = Convert.ToBase64String(book.book_image);
+                ViewData["ImageBase64"] = $"data:image/jpeg;base64,{base64Image}";
+            }
+
+            return View(book);
+        }
 
     }
 }

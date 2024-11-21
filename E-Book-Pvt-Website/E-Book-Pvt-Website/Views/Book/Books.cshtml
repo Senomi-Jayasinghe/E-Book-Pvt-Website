@@ -7,7 +7,7 @@
 <h1>Books</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="AddBooks">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -50,9 +50,9 @@
                     @Html.DisplayFor(modelItem => item.book_author_id)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.book_id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.book_id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.book_id">Delete</a>
+                    <a asp-action="EditBooks" asp-route-id="@item.book_id">Edit</a> |
+                    <a asp-action="BookDetails" asp-route-id="@item.book_id">Details</a> |
+                    <a asp-action="DeleteBooks" asp-route-id="@item.book_id">Delete</a>
                 </td>
             </tr>
         }
