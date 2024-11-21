@@ -20,7 +20,7 @@
             </div>
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             <button type="submit" class="btn btn-primary btn-block w-100">Login</button>
-            <p class="text-danger mt-3">Don't have an account yet? <a href="#">Sign Up Here</a>.</p>
+            <p class="text-danger mt-3">Don't have an account yet? <a asp-controller="Account" asp-action="SignUp">Sign Up Here</a>.</p>
         </form>
     </div>
 

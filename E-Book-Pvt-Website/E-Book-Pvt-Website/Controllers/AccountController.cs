@@ -59,7 +59,7 @@ namespace E_Book_Pvt_Website.Controllers
             if (customer != null)
             {
                 // Verify password (assuming stored passwords are hashed)
-                return VerifyPassword(password, customer.customer_password);
+                //return VerifyPassword(password, customer.customer_password); HGDHHDHDHDHHDFHGDFFFG
             }
 
             return false; // Customer not found
@@ -73,5 +73,43 @@ namespace E_Book_Pvt_Website.Controllers
             var inputPasswordBytes = System.Text.Encoding.UTF8.GetBytes(inputPassword);
             return inputPasswordBytes.SequenceEqual(storedPassword);
         }
+
+        // GET: SignUp page
+        [HttpGet]
+        public IActionResult SignUp()
+        {
+            return View(new CustomerSignUpViewModel());
+        }
+
+        // POST: Sign up new customer
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult SignUp(CustomerSignUpViewModel model)
+        {
+            if (model.Password != model.ConfirmPassword)
+            {
+                ModelState.AddModelError("", "The password and confirmation password do not match.");
+            }
+            else
+            {
+                var customer = new Customer
+                {
+                    customer_name = model.Name,
+                    customer_email = model.Email,
+                    customer_phoneno = model.PhoneNumber,
+                    customer_address = model.Address,
+                    customer_password = model.Password // Hash password if necessary
+                };
+
+                _context.Customer.Add(customer);
+                _context.SaveChanges();
+                TempData["Message"] = "Registration successful!";
+                return RedirectToAction("Books");
+            }
+
+            // If model state is invalid, return the same view with validation errors
+            return View(model);
+        }
+
     }
 }

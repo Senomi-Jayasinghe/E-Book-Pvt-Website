@@ -11,6 +11,6 @@ namespace E_Book_Pvt_Website.Models
         public string customer_phoneno { get; set; }
         public string customer_address { get; set; }
         public string customer_email { get; set; }
-        public byte[] customer_password { get; set; }
+        public string customer_password { get; set; }
     }
 }
