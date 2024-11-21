@@ -22,6 +22,15 @@ namespace E_Book_Pvt_Website.Controllers
         {
             return View();
         }
+        public IActionResult SignUp()
+        {
+            return View();
+        }
+
+        public IActionResult Books()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
