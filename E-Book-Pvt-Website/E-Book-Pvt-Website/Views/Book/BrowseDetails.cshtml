@@ -1,45 +1,45 @@
 ﻿@model E_Book_Pvt_Website.Models.Book
 
 @{
-    ViewData["Title"] = "View";
+    ViewData["Title"] = "View Details";
 }
 
-<h1>View</h1>
+<h1>ViewDetails</h1>
 
 <div>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             Title:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.book_title)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             Description:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.book_description)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             Publisher:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.book_publisher)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             Price:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.book_price)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             ISBN:
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.book_ISBN)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             Author:
         </dt>
         <dd class="col-sm-10">
@@ -51,7 +51,7 @@
             }
             @authorName
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             Image:
         </dt>
         <dd class="col-sm-10">
@@ -67,6 +67,5 @@
     </dl>
 </div>
 <div>
-    <a asp-action="BookEdit" asp-route-id="@Model?.book_id">Edit</a> |
-    <a asp-action="Books">Back to List</a>
+    <button>Add To Cart</button>
 </div>
