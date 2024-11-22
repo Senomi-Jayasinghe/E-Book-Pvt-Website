@@ -217,6 +217,14 @@ namespace E_Book_Pvt_Website.Controllers
             // Pass authors to the view
             ViewBag.AuthorNames = authors;
 
+            // Fetch feedback for the book
+            var feedbackList = _context.BookFeedback
+                                        .Where(f => f.book_id == id)
+                                        .Select(f => f.feedback)
+                                        .ToList();
+
+            ViewBag.FeedbackList = feedbackList;
+
             // Convert the image to a base64 string if it exists
             if (book.book_image != null)
             {

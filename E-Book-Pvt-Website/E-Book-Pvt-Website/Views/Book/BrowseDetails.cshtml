@@ -77,4 +77,30 @@
         <button type="submit" class="btn btn-primary">Add To Cart</button>
     </form>
 </div>
-
+<hr />
+@if (ViewBag.FeedbackList != null)
+{
+    <div class="d-flex align-items-center mt-2 mb-2">
+        <h4 class="mb-0 me-3">User Feedback</h4>
+        <button class="btn btn-primary">Add Feedback</button>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Feedback</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var feedback in ViewBag.FeedbackList)
+            {
+                <tr>
+                    <td>@feedback</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No feedback available yet.</p>
+}
