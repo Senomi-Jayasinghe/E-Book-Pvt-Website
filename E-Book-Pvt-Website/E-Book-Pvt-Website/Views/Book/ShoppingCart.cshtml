@@ -1,0 +1,34 @@
+﻿@model List<E_Book_Pvt_Website.Models.Book>
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<h2>Your Shopping Cart</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <p>Your cart is empty.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Price</th>
+                <th>ISBN</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td>@book.book_title</td>
+                    <td>@book.book_price</td>
+                    <td>@book.book_ISBN</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

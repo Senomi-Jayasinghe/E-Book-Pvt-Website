@@ -1,4 +1,5 @@
 ﻿using E_Book_Pvt_Website.Data;
+using E_Book_Pvt_Website.Helpers;
 using E_Book_Pvt_Website.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -224,6 +225,32 @@ namespace E_Book_Pvt_Website.Controllers
             }
 
             return View(book);
+        }
+
+        public IActionResult AddToCart(int bookId)
+        {
+            // Fetch the book details from the database
+            var book = _context.Book.FirstOrDefault(b => b.book_id == bookId);
+            if (book == null) return NotFound();
+
+            // Retrieve the cart from session storage or create a new one
+            var cart = HttpContext.Session.GetObjectFromJson<List<Book>>("Cart") ?? new List<Book>();
+
+            // Add the selected book to the cart
+            cart.Add(book);
+
+            // Save the updated cart to session
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+
+            return RedirectToAction("ShoppingCart");
+        }
+
+        public IActionResult ShoppingCart()
+        {
+            // Retrieve the cart items from the session
+            var cart = HttpContext.Session.GetObjectFromJson<List<Book>>("Cart") ?? new List<Book>();
+
+            return View(cart);
         }
 
     }
