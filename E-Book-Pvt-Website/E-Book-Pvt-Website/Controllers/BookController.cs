@@ -227,17 +227,47 @@ namespace E_Book_Pvt_Website.Controllers
             return View(book);
         }
 
-        public IActionResult AddToCart(int bookId)
+        public IActionResult AddToCart(int bookId, int quantity)
         {
             // Fetch the book details from the database
             var book = _context.Book.FirstOrDefault(b => b.book_id == bookId);
-            if (book == null) return NotFound();
+            if (book == null)
+            {
+                return NotFound();
+            }
+
+            // Check if the quantity is valid (don't exceed book_quantity in the database)
+            if (quantity > book.book_quantity)
+            {
+                TempData["Message"] = $"Only {book.book_quantity} books available in stock.";
+                return RedirectToAction("BrowseDetails", new { id = bookId });
+            }
 
             // Retrieve the cart from session storage or create a new one
-            var cart = HttpContext.Session.GetObjectFromJson<List<Book>>("Cart") ?? new List<Book>();
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
 
-            // Add the selected book to the cart
-            cart.Add(book);
+            // Check if the book is already in the cart
+            var existingCartItem = cart.FirstOrDefault(ci => ci.Book.book_id == bookId);
+            if (existingCartItem != null)
+            {
+                // Update the quantity of the existing book in the cart
+                existingCartItem.Quantity += quantity;
+                // Ensure the quantity does not exceed available stock
+                if (existingCartItem.Quantity > book.book_quantity)
+                {
+                    existingCartItem.Quantity = book.book_quantity; // Set to max available quantity
+                    TempData["Message"] = $"Only {book.book_quantity} books available in stock.";
+                }
+            }
+            else
+            {
+                // Add new book with quantity to the cart
+                cart.Add(new CartItem
+                {
+                    Book = book,
+                    Quantity = quantity
+                });
+            }
 
             // Save the updated cart to session
             HttpContext.Session.SetObjectAsJson("Cart", cart);
@@ -248,9 +278,51 @@ namespace E_Book_Pvt_Website.Controllers
         public IActionResult ShoppingCart()
         {
             // Retrieve the cart items from the session
-            var cart = HttpContext.Session.GetObjectFromJson<List<Book>>("Cart") ?? new List<Book>();
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
 
-            return View(cart);
+            return View(cart); // Pass the correct model type (List<CartItem>) to the view
+        }
+
+
+        [HttpPost]
+        public IActionResult UpdateQuantity(int bookId, string action)
+        {
+            // Fetch the book details from the database
+            var book = _context.Book.FirstOrDefault(b => b.book_id == bookId);
+            if (book == null)
+            {
+                return NotFound();
+            }
+
+            // Retrieve the cart from session storage
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
+
+            // Find the cart item for the book
+            var cartItem = cart.FirstOrDefault(ci => ci.Book.book_id == bookId);
+            if (cartItem != null)
+            {
+                if (action == "add")
+                {
+                    // Increase quantity, but ensure it doesn't exceed available stock
+                    if (cartItem.Quantity < book.book_quantity)
+                    {
+                        cartItem.Quantity++;
+                    }
+                }
+                else if (action == "minus")
+                {
+                    // Decrease quantity, but not below 1
+                    if (cartItem.Quantity > 1)
+                    {
+                        cartItem.Quantity--;
+                    }
+                }
+            }
+
+            // Save the updated cart to session
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+
+            return RedirectToAction("ShoppingCart");
         }
 
     }

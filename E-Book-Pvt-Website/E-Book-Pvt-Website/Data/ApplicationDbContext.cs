@@ -22,10 +22,14 @@ namespace E_Book_Pvt_Website.Data
                 .HasKey(bc => new { bc.category_id, bc.book_id }); // Define composite primary key
             modelBuilder.Entity<OrderBook>()
                 .HasKey(bc => new { bc.order_id, bc.book_id }); // Define composite primary key
+            modelBuilder.Entity<BookFeedback>()
+                .HasKey(bc => new { bc.book_id, bc.customer_id, bc.feedback }); // Define composite primary key
         }
 
         public DbSet<Category> Category { get; set; }
         public DbSet<Order> Order { get; set; }
         public DbSet<OrderBook> OrderBook { get; set; }
+        public DbSet<BookFeedback> BookFeedback { get; set; }
+
     }
 }

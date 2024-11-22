@@ -69,6 +69,11 @@
 <div>
     <form asp-action="AddToCart" method="post">
         <input type="hidden" name="bookId" value="@Model.book_id" />
+        <!-- Quantity Input -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="@Model.book_quantity" value="1" />
+        <span id="stockMessage" style="color: red; display:none;">Not enough stock available</span>
+
         <button type="submit" class="btn btn-primary">Add To Cart</button>
     </form>
 </div>

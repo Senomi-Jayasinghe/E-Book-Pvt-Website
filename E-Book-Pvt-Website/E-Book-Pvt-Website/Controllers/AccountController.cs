@@ -104,7 +104,7 @@ namespace E_Book_Pvt_Website.Controllers
                 _context.Customer.Add(customer);
                 _context.SaveChanges();
                 TempData["Message"] = "Registration successful!";
-                return RedirectToAction("Books");
+                return RedirectToAction("CustomerLogin");
             }
 
             // If model state is invalid, return the same view with validation errors

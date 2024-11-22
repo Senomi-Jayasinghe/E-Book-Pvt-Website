@@ -1,7 +1,8 @@
-﻿@model List<E_Book_Pvt_Website.Models.Book>
+﻿@model List<CartItem>
 
 @{
     ViewData["Title"] = "Shopping Cart";
+    double totalPrice = 0;
 }
 
 <h2>Your Shopping Cart</h2>
@@ -16,19 +17,43 @@ else
         <thead>
             <tr>
                 <th>Title</th>
-                <th>Price</th>
                 <th>ISBN</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var book in Model)
+            @foreach (var cartItem in Model)
             {
+                totalPrice += cartItem.Book.book_price * cartItem.Quantity;
+
                 <tr>
-                    <td>@book.book_title</td>
-                    <td>@book.book_price</td>
-                    <td>@book.book_ISBN</td>
+                    <td>@cartItem.Book.book_title</td>
+                    <td>@cartItem.Book.book_ISBN</td>
+                    <td>@cartItem.Quantity</td>
+                    <td>Rs. @cartItem.Book.book_price</td>
+                    <td>
+                        <form action="@Url.Action("UpdateQuantity", "Book")" method="post" style="display:inline;">
+                            <input type="hidden" name="bookId" value="@cartItem.Book.book_id" />
+                            <input type="hidden" name="action" value="add" />
+                            <button type="submit" class="btn btn-success">+</button>
+                        </form>
+                        <form action="@Url.Action("UpdateQuantity", "Book")" method="post" style="display:inline;">
+                            <input type="hidden" name="bookId" value="@cartItem.Book.book_id" />
+                            <input type="hidden" name="action" value="minus" />
+                            <button type="submit" class="btn btn-danger">-</button>
+                        </form>
+                    </td>
                 </tr>
             }
+            <tr>
+                <td><b>Total Price:</b></td>
+                <td></td>
+                <td></td>
+                <td><b>Rs. @totalPrice</b></td>
+                <td></td>
+            </tr>
         </tbody>
     </table>
 }
