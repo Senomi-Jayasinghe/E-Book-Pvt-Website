@@ -48,9 +48,21 @@
                 <span asp-validation-for="book_author_id" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="book_image" class="control-label">Image:</label>
-                <input asp-for="book_image" type="file" class="form-control" />
-                <span asp-validation-for="book_image" class="text-danger"></span>
+                <label>Current Image:</label><br />
+                @if (ViewBag.ImageBase64 != null)
+                {
+                    <img src="@ViewBag.ImageBase64" alt="Current Book Image" style="width:150px; height:auto;" />
+                }
+                else
+                {
+                    <p>No image available</p>
+                }
+            </div>
+
+            <!-- Image upload -->
+            <div class="form-group">
+                <label for="bookImage">Upload New Image:</label>
+                <input type="file" name="bookImage" class="form-control" />
             </div>
         </div>
         <div class="form-group mt-3">

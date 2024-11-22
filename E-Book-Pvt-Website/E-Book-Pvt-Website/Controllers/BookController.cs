@@ -98,8 +98,15 @@ namespace E_Book_Pvt_Website.Controllers
             // Get the book to edit
             var book = _context.Book.FirstOrDefault(b => b.book_id == id);
 
+            // Convert the book image to a base64 string if it exists
+            if (book?.book_image != null)
+            {
+                ViewBag.ImageBase64 = $"data:image/jpeg;base64,{Convert.ToBase64String(book.book_image)}";
+            }
+
             return View(book);
         }
+
 
         // POST: EditBooks
         [HttpPost]
@@ -115,18 +122,33 @@ namespace E_Book_Pvt_Website.Controllers
             {
                 try
                 {
-                    // If a new image is uploaded, process it
+                    // Get the existing book record
+                    var existingBook = _context.Book.FirstOrDefault(b => b.book_id == id);
+                    if (existingBook == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Update book details
+                    existingBook.book_title = book.book_title;
+                    existingBook.book_description = book.book_description;
+                    existingBook.book_publisher = book.book_publisher;
+                    existingBook.book_price = book.book_price;
+                    existingBook.book_ISBN = book.book_ISBN;
+                    existingBook.book_author_id = book.book_author_id;
+
+                    // If a new image is uploaded, replace the existing one
                     if (bookImage != null && bookImage.Length > 0)
                     {
                         using (var memoryStream = new MemoryStream())
                         {
                             await bookImage.CopyToAsync(memoryStream);
-                            book.book_image = memoryStream.ToArray(); // Store image as byte array
+                            existingBook.book_image = memoryStream.ToArray(); // Store image as byte array
                         }
                     }
 
-                    // Update the book record in the database
-                    _context.Update(book);
+                    // Save changes to the database
+                    _context.Update(existingBook);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -143,9 +165,17 @@ namespace E_Book_Pvt_Website.Controllers
                 return RedirectToAction(nameof(Books)); // Redirect to the list of books after editing
             }
 
-            // If something goes wrong with the form submission, return the book to the view
-            var authors = _context.Author.ToDictionary(a => a.author_id, a => a.author_name);
-            ViewBag.AuthorNames = authors;
+            // If form submission fails, repopulate the SelectList for authors
+            var authors = _context.Author
+                                  .Select(a => new { a.author_id, a.author_name })
+                                  .ToList();
+            ViewBag.AuthorNames = new SelectList(authors, "author_id", "author_name");
+
+            // Pass the current image back to the view if there was an error
+            if (book.book_image != null)
+            {
+                ViewBag.ImageBase64 = $"data:image/jpeg;base64,{Convert.ToBase64String(book.book_image)}";
+            }
 
             return View(book);
         }
