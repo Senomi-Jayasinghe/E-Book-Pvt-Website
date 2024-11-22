@@ -182,8 +182,25 @@ namespace E_Book_Pvt_Website.Controllers
 
         public async Task<IActionResult> BrowseBooks()
         {
-            var items = await _context.Book.ToListAsync();
-            return View(items);
+            // Fetch all books
+            var books = await _context.Book.ToListAsync();
+
+            // Fetch authors as a dictionary of author IDs to names
+            var authors = await _context.Author
+                .ToDictionaryAsync(a => a.author_id, a => a.author_name);
+
+            // Pass the dictionary to the view using ViewBag for author names
+            ViewBag.AuthorNames = authors;
+
+            // Prepare image URLs in the ViewBag for each book
+            ViewBag.ImageUrls = books.ToDictionary(
+                b => b.book_id,
+                b => b.book_image != null
+                    ? $"data:image/jpeg;base64,{Convert.ToBase64String(b.book_image)}"
+                    : "fallback.jpg"
+            );
+
+            return View(books);
         }
 
     }
