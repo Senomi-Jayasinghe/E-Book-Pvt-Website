@@ -35,7 +35,7 @@ namespace E_Book_Pvt_Website.Controllers
                     {
                         // Store customer_id and role_id in session
                         HttpContext.Session.SetInt32("customer_id", customer.customer_id);
-                        HttpContext.Session.SetInt32("role_id", 1); // Set role_id as 1
+                        HttpContext.Session.SetInt32("role_id", 2); // Set role_id as 1
 
                         TempData["Message"] = "Login successful!";
                         return RedirectToAction("BrowseBooks", "Book");

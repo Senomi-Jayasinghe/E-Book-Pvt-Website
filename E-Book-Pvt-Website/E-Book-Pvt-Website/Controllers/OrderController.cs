@@ -146,5 +146,44 @@ namespace E_Book_Pvt_Website.Controllers
 
             return View(viewModel);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> EditOrder(int orderId)
+        {
+            var order = await _context.Order.FindAsync(orderId);
+
+            if (order == null)
+            {
+                return NotFound(); // Order not found in the database
+            }
+
+            return View(order);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> EditOrder(Order updatedOrder)
+        {
+            if (ModelState.IsValid)
+            {
+                // Find the order to update using the order_id
+                var order = await _context.Order.FindAsync(updatedOrder.order_id);
+                if (order == null)
+                {
+                    return NotFound();
+                }
+
+                // Update the order fields
+                order.order_status = updatedOrder.order_status;
+                order.order_address = updatedOrder.order_address;
+                order.order_phoneno = updatedOrder.order_phoneno;
+
+                // Save changes to the database
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(ViewOrders)); // Redirect to orders list after update
+            }
+            return View(updatedOrder);
+        }
     }
 }
