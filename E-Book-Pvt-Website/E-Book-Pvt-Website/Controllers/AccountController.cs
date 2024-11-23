@@ -28,9 +28,18 @@ namespace E_Book_Pvt_Website.Controllers
 
                 if (isAuthenticated)
                 {
-                    // Authentication successful
-                    TempData["Message"] = "Login successful!";
-                    return RedirectToAction("Index", "Home");
+                    // Get customer_id based on the authenticated user
+                    var customer = _context.Customer.FirstOrDefault(c => c.customer_email == loginModel.Email);
+
+                    if (customer != null)
+                    {
+                        // Store customer_id and role_id in session
+                        HttpContext.Session.SetInt32("customer_id", customer.customer_id);
+                        HttpContext.Session.SetInt32("role_id", 1); // Set role_id as 1
+
+                        TempData["Message"] = "Login successful!";
+                        return RedirectToAction("BrowseBooks", "Book");
+                    }
                 }
                 else
                 {
@@ -58,13 +67,12 @@ namespace E_Book_Pvt_Website.Controllers
 
             if (customer != null)
             {
-                // Verify password (assuming stored passwords are hashed)
-                //return VerifyPassword(password, customer.customer_password); HGDHHDHDHDHHDFHGDFFFG
+                // Check if the entered password matches the stored password
+                return customer.customer_password.Trim() == password.Trim();
             }
 
-            return false; // Customer not found
+            return false; // Customer not found or password does not match
         }
-
 
         private bool VerifyPassword(string inputPassword, byte[] storedPassword)
         {
