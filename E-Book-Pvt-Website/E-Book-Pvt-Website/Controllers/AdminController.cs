@@ -99,5 +99,35 @@ namespace E_Book_Pvt_Website.Controllers
             var admin = _context.Admin.FirstOrDefault(b => b.admin_id == id);
             return View(admin);
         }
+
+        [HttpGet]
+        public IActionResult DeleteAdmin(int id)
+        {
+            // Get the admin to edit
+            var admin = _context.Admin.FirstOrDefault(b => b.admin_id == id);
+            return View(admin);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteAdminConfirmed(int id)
+        {
+            // Retrieve the admin by admin_id
+            var admin = await _context.Admin.FindAsync(id);
+
+            if (admin == null)
+            {
+                return NotFound(); // Return 404 if admin not found
+            }
+
+            // Delete the admin from the database
+            _context.Admin.Remove(admin);
+
+            // Save changes to apply the deletion
+            await _context.SaveChangesAsync();
+
+            // Redirect to the admin list page after deletion
+            return RedirectToAction(nameof(AdminList));
+        }
     }
 }
