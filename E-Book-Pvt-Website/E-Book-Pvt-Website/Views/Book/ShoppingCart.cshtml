@@ -56,4 +56,9 @@ else
             </tr>
         </tbody>
     </table>
+    <!-- Checkout Button -->
+    <form action="@Url.Action("Checkout", "Order")" method="post">
+        <input type="hidden" name="totalPrice" value="@totalPrice" />
+        <button type="submit" class="btn btn-primary">Checkout</button>
+    </form>
 }
