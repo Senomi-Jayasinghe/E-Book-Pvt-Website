@@ -92,5 +92,12 @@ namespace E_Book_Pvt_Website.Controllers
             }
             return View(admin);
         }
+
+        public IActionResult AdminDetails(int id)
+        {
+            // Get the admin to edit
+            var admin = _context.Admin.FirstOrDefault(b => b.admin_id == id);
+            return View(admin);
+        }
     }
 }

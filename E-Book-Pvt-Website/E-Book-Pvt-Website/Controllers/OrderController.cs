@@ -185,5 +185,62 @@ namespace E_Book_Pvt_Website.Controllers
             }
             return View(updatedOrder);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> CancelOrder(int orderId)
+        {
+            // Retrieve the order by orderId
+            var order = await _context.Order.FirstOrDefaultAsync(o => o.order_id == orderId);
+            if (order == null)
+            {
+                return NotFound();  // Return a 404 if order not found
+            }
+
+            // Retrieve the author names as a dictionary for the view
+            var authors = await _context.Author.ToDictionaryAsync(a => a.author_id, a => a.author_name);
+            ViewBag.AuthorNames = authors;
+
+            // Fetch order books along with book details
+            var orderBooks = await _context.OrderBook
+                .Where(ob => ob.order_id == orderId)
+                .Select(ob => new OrderBookDetails
+                {
+                    Quantity = ob.quantity,
+                    BookTitle = _context.Book.Where(b => b.book_id == ob.book_id).Select(b => b.book_title).FirstOrDefault(),
+                    ISBN = _context.Book.Where(b => b.book_id == ob.book_id).Select(b => b.book_ISBN).FirstOrDefault(),
+                    Image = _context.Book.Where(b => b.book_id == ob.book_id).Select(b => b.book_image).FirstOrDefault(),
+                    AuthorId = _context.Book.Where(b => b.book_id == ob.book_id).Select(b => b.book_author_id).FirstOrDefault()
+                })
+                .ToListAsync();
+
+            var viewModel = new OrderDetailsViewModel
+            {
+                Order = order,
+                OrderBooks = orderBooks
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [ActionName("CancelOrder")]  // Specifies the name of the action when using POST
+        public async Task<IActionResult> CancelOrderPost(int orderId)
+        {
+            // Retrieve the order by orderId
+            var order = await _context.Order.FindAsync(orderId);
+            if (order == null)
+            {
+                return NotFound();  // Return a 404 if order not found
+            }
+
+            // Change the order status to "Cancelled"
+            order.order_status = "Cancelled";
+
+            // Save changes to the database
+            await _context.SaveChangesAsync();
+
+            // Redirect to the orders list or any other view
+            return RedirectToAction(nameof(ViewOrders));  // Redirect to the list or view of orders
+        }
     }
 }
