@@ -92,5 +92,29 @@ namespace E_Book_Pvt_Website.Controllers
         {
             return View();
         }
+
+        public IActionResult ViewOrders()
+        {
+            // Retrieve role_id and customer_id from session
+            int? roleId = HttpContext.Session.GetInt32("role_id");
+            int? customerId = HttpContext.Session.GetInt32("customer_id");
+
+            // Get the orders from the database
+            IEnumerable<Order> orders;
+
+            if (roleId == 1 && customerId.HasValue)
+            {
+                // If role_id is 1, show only the orders for the logged-in customer
+                orders = _context.Order.Where(o => o.order_customer_id == customerId.Value).ToList();
+            }
+            else
+            {
+                // If role_id is not 1, show all orders
+                orders = _context.Order.ToList();
+            }
+
+            return View(orders);
+        }
+
     }
 }
