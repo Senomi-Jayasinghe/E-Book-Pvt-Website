@@ -235,6 +235,31 @@ namespace E_Book_Pvt_Website.Controllers
             return View(book);
         }
 
+        [HttpPost]
+        public IActionResult AddFeedback(int bookId, string feedbackText)
+        {
+            int? customerId = HttpContext.Session.GetInt32("customer_id");
+            if (customerId == null)
+            {
+                return RedirectToAction("CustomerLogin", "Account");
+            }
+
+            // Create a new BookFeedback entry
+            var feedback = new BookFeedback
+            {
+                customer_id = customerId.Value,
+                book_id = bookId,
+                feedback = feedbackText
+            };
+
+            // Save the feedback to the database
+            _context.BookFeedback.Add(feedback);
+            _context.SaveChanges();
+
+            // Redirect back to the book details page
+            return RedirectToAction("BrowseDetails", new { id = bookId });
+        }
+
         public IActionResult AddToCart(int bookId, int quantity)
         {
             // Fetch the book details from the database

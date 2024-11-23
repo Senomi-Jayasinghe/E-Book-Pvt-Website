@@ -85,12 +85,19 @@
 <hr />
 @if (ViewBag.FeedbackList != null)
 {
-    <div class="d-flex align-items-center mt-2 mb-2">
+    <div class="mt-2 mb-2">
         <h4 class="mb-0 me-3">User Feedback</h4>
         @* Add Feedback button, only visible if role_id is 1 *@
         @if (roleId == 1)
         {
-            <button class="btn btn-primary">Add Feedback</button>
+            <form asp-action="AddFeedback" method="post">
+                <input type="hidden" name="bookId" value="@Model.book_id" />
+                <div class="form-group">
+                    <label for="feedbackText">Your Feedback:</label>
+                    <textarea id="feedbackText" name="feedbackText" class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Add Feedback</button>
+            </form>
         }
     </div>
     <table class="table table-bordered">

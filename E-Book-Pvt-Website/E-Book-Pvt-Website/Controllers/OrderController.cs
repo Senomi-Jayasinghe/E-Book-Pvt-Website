@@ -116,5 +116,35 @@ namespace E_Book_Pvt_Website.Controllers
             return View(orders);
         }
 
+        public async Task<IActionResult> OrderDetails(int orderId)
+        {
+            var order = await _context.Order.FirstOrDefaultAsync(o => o.order_id == orderId);
+            if (order == null) return NotFound();
+
+            // Retrieve the author names as a dictionary
+            var authors = await _context.Author.ToDictionaryAsync(a => a.author_id, a => a.author_name);
+            ViewBag.AuthorNames = authors;
+
+            // Fetch order books along with book details
+            var orderBooks = await _context.OrderBook
+                .Where(ob => ob.order_id == orderId)
+                .Select(ob => new OrderBookDetails
+                {
+                    Quantity = ob.quantity,
+                    BookTitle = _context.Book.Where(b => b.book_id == ob.book_id).Select(b => b.book_title).FirstOrDefault(),
+                    ISBN = _context.Book.Where(b => b.book_id == ob.book_id).Select(b => b.book_ISBN).FirstOrDefault(),
+                    Image = _context.Book.Where(b => b.book_id == ob.book_id).Select(b => b.book_image).FirstOrDefault(),
+                    AuthorId = _context.Book.Where(b => b.book_id == ob.book_id).Select(b => b.book_author_id).FirstOrDefault()
+                })
+                .ToListAsync();
+
+            var viewModel = new OrderDetailsViewModel
+            {
+                Order = order,
+                OrderBooks = orderBooks
+            };
+
+            return View(viewModel);
+        }
     }
 }
