@@ -10,6 +10,6 @@ namespace E_Book_Pvt_Website.Models
         public string admin_name { get; set; }
         public string admin_phoneno { get; set; }
         public string admin_email { get; set; }
-        public byte[] admin_password { get; set; }
+        public string admin_password { get; set; }
     }
 }

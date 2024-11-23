@@ -119,5 +119,63 @@ namespace E_Book_Pvt_Website.Controllers
             return View(model);
         }
 
+        [HttpGet]
+        public IActionResult AdminLogin()
+        {
+            return View(new AdminLoginModal());
+        }
+
+        [HttpPost]
+        public IActionResult AdminLogin(AdminLoginModal loginModel)
+        {
+            if (ModelState.IsValid)
+            {
+                // Check credentials
+                bool isAuthenticated = AuthenticateAdmin(loginModel.Email, loginModel.Password);
+
+                if (isAuthenticated)
+                {
+                    var admin = _context.Admin.FirstOrDefault(c => c.admin_email == loginModel.Email);
+
+                    if (admin != null)
+                    {
+                        HttpContext.Session.SetInt32("admin_id", admin.admin_id);
+                        HttpContext.Session.SetInt32("role_id", 2); // Set role_id as 2
+
+                        TempData["Message"] = "Login successful!";
+                        return RedirectToAction("BrowseBooks", "Book");
+                    }
+                }
+                else
+                {
+                    // Invalid credentials
+                    ModelState.AddModelError("", "Invalid email or password.");
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("", "Email is required.");
+            }
+
+            return View(loginModel);
+        }
+
+        private bool AuthenticateAdmin(string email, string password)
+        {
+            // Ensure email is not null or empty before querying
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            var admin = _context.Admin
+                .FirstOrDefault(c => c.admin_email == email);
+
+            if (admin != null)
+            {
+                // Check if the entered password matches the stored password
+                return admin.admin_password.Trim() == password.Trim();
+            }
+
+            return false;
+        }
     }
 }

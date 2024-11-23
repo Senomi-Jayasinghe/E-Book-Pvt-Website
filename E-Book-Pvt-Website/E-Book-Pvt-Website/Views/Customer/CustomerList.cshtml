@@ -21,9 +21,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.customer_email)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.customer_password)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -44,11 +41,7 @@
                     @Html.DisplayFor(modelItem => item.customer_email)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.customer_password)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.customer_id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.customer_id">Details</a> |
+                    <a asp-action="EditCustomer" asp-route-id="@item.customer_id">Edit</a> |
                 </td>
             </tr>
         }
