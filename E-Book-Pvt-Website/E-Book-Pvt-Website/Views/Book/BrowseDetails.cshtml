@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "View Details";
+    int? roleId = Context.Session.GetInt32("role_id");
 }
 
 <h1>ViewDetails</h1>
@@ -67,22 +68,30 @@
     </dl>
 </div>
 <div>
-    <form asp-action="AddToCart" method="post">
-        <input type="hidden" name="bookId" value="@Model.book_id" />
-        <!-- Quantity Input -->
-        <label for="quantity">Quantity:</label>
-        <input type="number" name="quantity" id="quantity" min="1" max="@Model.book_quantity" value="1" />
-        <span id="stockMessage" style="color: red; display:none;">Not enough stock available</span>
+    @* Add to Cart Form, only visible if role_id is 1 *@
+    @if (roleId == 1)
+    {
+        <form asp-action="AddToCart" method="post">
+            <input type="hidden" name="bookId" value="@Model.book_id" />
+            <!-- Quantity Input -->
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" min="1" max="@Model.book_quantity" value="1" />
+            <span id="stockMessage" style="color: red; display:none;">Not enough stock available</span>
 
-        <button type="submit" class="btn btn-primary">Add To Cart</button>
-    </form>
+            <button type="submit" class="btn btn-primary">Add To Cart</button>
+        </form>
+    }
 </div>
 <hr />
 @if (ViewBag.FeedbackList != null)
 {
     <div class="d-flex align-items-center mt-2 mb-2">
         <h4 class="mb-0 me-3">User Feedback</h4>
-        <button class="btn btn-primary">Add Feedback</button>
+        @* Add Feedback button, only visible if role_id is 1 *@
+        @if (roleId == 1)
+        {
+            <button class="btn btn-primary">Add Feedback</button>
+        }
     </div>
     <table class="table table-bordered">
         <thead>
