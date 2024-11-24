@@ -196,17 +196,34 @@ namespace E_Book_Pvt_Website.Controllers
             return View(book);
         }
 
-        public async Task<IActionResult> BrowseBooks()
+        public async Task<IActionResult> BrowseBooks(string searchTitle, int? categoryId)
         {
-            // Fetch all books
-            var books = await _context.Book.ToListAsync();
+            // Fetch and filter books
+            var booksQuery = _context.Book.AsQueryable();
 
-            // Fetch authors as a dictionary of author IDs to names
-            var authors = await _context.Author
-                .ToDictionaryAsync(a => a.author_id, a => a.author_name);
+            if (!string.IsNullOrEmpty(searchTitle))
+            {
+                booksQuery = booksQuery.Where(b => b.book_title.Contains(searchTitle));
+            }
 
-            // Pass the dictionary to the view using ViewBag for author names
+            if (categoryId.HasValue)
+            {
+                booksQuery = booksQuery.Where(b => _context.BookCategory
+                    .Any(bc => bc.book_id == b.book_id && bc.category_id == categoryId));
+            }
+
+            var books = await booksQuery.ToListAsync();
+
+            // Pass current search values to ViewBag
+            ViewBag.SearchTitle = searchTitle;
+            ViewBag.CategoryId = categoryId;
+
+            // Fetch authors and categories
+            var authors = await _context.Author.ToDictionaryAsync(a => a.author_id, a => a.author_name);
+            var categories = await _context.Category.ToListAsync();
+
             ViewBag.AuthorNames = authors;
+            ViewBag.CategoryList = new SelectList(categories, "category_id", "category_name");
 
             // Prepare image URLs in the ViewBag for each book
             ViewBag.ImageUrls = books.ToDictionary(
