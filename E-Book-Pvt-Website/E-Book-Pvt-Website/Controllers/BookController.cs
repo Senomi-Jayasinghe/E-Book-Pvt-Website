@@ -390,5 +390,27 @@ namespace E_Book_Pvt_Website.Controllers
             return RedirectToAction("ShoppingCart");
         }
 
+        public async Task<IActionResult> DeleteBook(int id)
+        {
+            var book = _context.Book.FirstOrDefault(b => b.book_id == id);
+            if (book == null)
+            {
+                return NotFound();
+            }
+
+            var authors = _context.Author.ToDictionary(a => a.author_id, a => a.author_name);
+
+            // Pass authors to the view
+            ViewBag.AuthorNames = authors;
+
+            // Convert the image to a base64 string if it exists
+            if (book.book_image != null)
+            {
+                var base64Image = Convert.ToBase64String(book.book_image);
+                ViewData["ImageBase64"] = $"data:image/jpeg;base64,{base64Image}";
+            }
+
+            return View(book);
+        }
     }
 }

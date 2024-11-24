@@ -5,7 +5,7 @@
     int? roleId = Context.Session.GetInt32("role_id");
 }
 
-<h1>ViewDetails</h1>
+<h1>View Details</h1>
 
 <div>
     <hr />
@@ -51,6 +51,12 @@
                 : "Unknown"; // or any default text you'd like to display
             }
             @authorName
+        </dd>
+        <dt class="col-sm-2">
+            Category:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.book_category)
         </dd>
         <dt class="col-sm-2">
             Image:
