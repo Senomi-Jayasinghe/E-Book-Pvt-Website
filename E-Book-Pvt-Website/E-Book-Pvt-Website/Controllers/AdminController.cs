@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using static System.Reflection.Metadata.BlobBuilder;
+using System.Text.Json; // Ensure System.Text.Json is imported for Json serialization
 
 namespace E_Book_Pvt_Website.Controllers
 {
@@ -72,7 +73,7 @@ namespace E_Book_Pvt_Website.Controllers
                     existingAdmin.admin_phoneno = admin.admin_phoneno;
                     existingAdmin.admin_email = admin.admin_email;
                     existingAdmin.admin_password = admin.admin_password;
-                  
+
                     // Save changes to the database
                     _context.Update(existingAdmin);
                     await _context.SaveChangesAsync();
@@ -129,5 +130,36 @@ namespace E_Book_Pvt_Website.Controllers
             // Redirect to the admin list page after deletion
             return RedirectToAction(nameof(AdminList));
         }
+
+
+
+        public async Task<IActionResult> AdminDashboard()
+        {
+            // Orders summary by status for pie chart
+            var orderStatuses = await _context.Order
+                .GroupBy(o => o.order_status)
+                .Select(g => new
+                {
+                    Status = g.Key,
+                    Count = g.Count()
+                })
+                .ToListAsync();
+
+            // Prepare data for the chart
+            ViewBag.StatusLabels = JsonSerializer.Serialize(orderStatuses.Select(s => s.Status).ToList());
+            ViewBag.StatusData = JsonSerializer.Serialize(orderStatuses.Select(s => s.Count).ToList());
+
+            // Total number of orders placed
+            ViewBag.TotalOrders = await _context.Order.CountAsync();
+
+            // Total number of books
+            ViewBag.TotalBooks = await _context.Book.CountAsync();
+
+            // Total revenue (sum of order prices)
+            ViewBag.TotalRevenue = await _context.Order.SumAsync(o => o.order_price);
+
+            return View();
+        }
+
     }
 }

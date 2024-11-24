@@ -3,16 +3,52 @@
   "WorkspaceRootPath": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\e-book-pvt-website\\views\\book\\browsebooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\book\\browsebooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\book\\addbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\book\\addbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\account\\adminlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\book\\addbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\book\\addbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\book\\browsedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\book\\browsedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +58,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 189,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAcwJEAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:26:29.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminLogin.cshtml",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Account\\AdminLogin.cshtml",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Account\\AdminLogin.cshtml",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Account\\AdminLogin.cshtml",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Account\\AdminLogin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T12:29:52.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAkwIcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T12:29:07.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Models\\Order.cs",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Models\\Order.cs",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T12:26:57.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Admin\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Admin\\AdminDashboard.cshtml",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Admin\\AdminDashboard.cshtml",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Admin\\AdminDashboard.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T12:24:20.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Account\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Account\\SignUp.cshtml",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Account\\SignUp.cshtml",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Account\\SignUp.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAYAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T12:19:30.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BrowseDetails.cshtml",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Book\\BrowseDetails.cshtml",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Book\\BrowseDetails.cshtml",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Book\\BrowseDetails.cshtml",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Book\\BrowseDetails.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T12:12:18.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAAC4AAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T12:11:50.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:26:29.771Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,35 +189,35 @@
               "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Book\\AddBooks.cshtml",
               "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Book\\AddBooks.cshtml",
               "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Book\\AddBooks.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADkAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T10:26:15.391Z",
+              "WhenOpened": "2024-11-24T11:37:09.858Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Models\\Book.cs",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Models\\Book.cs",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Models\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:36:14.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "BookController.cs",
               "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Controllers\\BookController.cs",
               "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Controllers\\BookController.cs",
               "RelativeToolTip": "E-Book-Pvt-Website\\Controllers\\BookController.cs",
-              "ViewState": "AQIAAL8AAAAAAAAAAAAgwO0AAAAAAAAA",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAIwCwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T10:21:11.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BrowseBooks.cshtml",
-              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Book\\BrowseBooks.cshtml",
-              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Book\\BrowseBooks.cshtml",
-              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Book\\BrowseBooks.cshtml",
-              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Book\\BrowseBooks.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T10:20:05.199Z",
+              "WhenOpened": "2024-11-24T11:26:29.8Z",
               "EditorCaption": ""
             }
           ]

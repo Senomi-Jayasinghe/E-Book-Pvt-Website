@@ -143,7 +143,7 @@ namespace E_Book_Pvt_Website.Controllers
                         HttpContext.Session.SetInt32("role_id", 2); // Set role_id as 2
 
                         TempData["Message"] = "Login successful!";
-                        return RedirectToAction("BrowseBooks", "Book");
+                        return RedirectToAction("AdminDashboard", "Admin");
                     }
                 }
                 else
