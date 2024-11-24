@@ -3,27 +3,55 @@
   "WorkspaceRootPath": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\admin\\editadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\admin\\editadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\admin\\createadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\admin\\createadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\order\\editorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\order\\editorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\customer\\editcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\customer\\editcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\customer\\customerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\customer\\customerlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\e-book-pvt-website\\views\\book\\browsedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\book\\browsedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\book\\deletebook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\book\\deletebook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\book\\editbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\e-book-pvt-website\\views\\book\\editbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\book\\editbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\book\\bookdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\e-book-pvt-website\\views\\book\\bookdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\book\\bookdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\book\\browsedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\book\\browsedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\e-book-pvt-website\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|d:\\esoft_lmu\\c#\\ad cw2\\e-book-pvt-website\\e-book-pvt-website\\e-book-pvt-website\\views\\book\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\e-book-pvt-website\\views\\book\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4E951AF9-5EE7-4A5C-B995-0BDE20833148}|E-Book-Pvt-Website\\E-Book-Pvt-Website.csproj|solutionrelative:e-book-pvt-website\\views\\book\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -34,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 189,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,6 +71,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CreateAdmin.cshtml",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Admin\\CreateAdmin.cshtml",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Admin\\CreateAdmin.cshtml",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Admin\\CreateAdmin.cshtml",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Admin\\CreateAdmin.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T16:50:48.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditOrder.cshtml",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Order\\EditOrder.cshtml",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Order\\EditOrder.cshtml",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Order\\EditOrder.cshtml",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Order\\EditOrder.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACUAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T16:48:52.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditCustomer.cshtml",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Customer\\EditCustomer.cshtml",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Customer\\EditCustomer.cshtml",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Customer\\EditCustomer.cshtml",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Customer\\EditCustomer.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T16:43:41.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerList.cshtml",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Customer\\CustomerList.cshtml",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Customer\\CustomerList.cshtml",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Customer\\CustomerList.cshtml",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Customer\\CustomerList.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T16:43:40.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditAdmin.cshtml",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Admin\\EditAdmin.cshtml",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Admin\\EditAdmin.cshtml",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Admin\\EditAdmin.cshtml",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Admin\\EditAdmin.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T16:43:36.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAADwvx4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T15:06:58.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T15:06:12.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "EditBooks.cshtml",
               "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Book\\EditBooks.cshtml",
               "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Book\\EditBooks.cshtml",
@@ -50,25 +169,24 @@
               "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Book\\EditBooks.cshtml",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAADQAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T13:40:24.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T13:40:24.725Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "BrowseDetails.cshtml",
               "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Book\\BrowseDetails.cshtml",
               "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Book\\BrowseDetails.cshtml",
               "ToolTip": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Book\\BrowseDetails.cshtml",
               "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Book\\BrowseDetails.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADgAAAANAAAA",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGQAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-24T13:35:00.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Books.cshtml",
               "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Book\\Books.cshtml",
               "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Book\\Books.cshtml",
@@ -76,12 +194,11 @@
               "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Book\\Books.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T13:33:39.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T13:33:39.221Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "BookController.cs",
               "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Controllers\\BookController.cs",
@@ -89,12 +206,11 @@
               "RelativeToolTip": "E-Book-Pvt-Website\\Controllers\\BookController.cs",
               "ViewState": "AQIAAIYBAAAAAAAAAAAowJQBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T13:32:54.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T13:32:54.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "BookDetails.cshtml",
               "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Book\\BookDetails.cshtml",
               "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Book\\BookDetails.cshtml",
@@ -102,12 +218,11 @@
               "RelativeToolTip": "E-Book-Pvt-Website\\Views\\Book\\BookDetails.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAAAAADgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T13:31:44.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T13:31:44.355Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "DeleteBook.cshtml",
               "DocumentMoniker": "D:\\ESOFT_LMU\\C#\\AD CW2\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\E-Book-Pvt-Website\\Views\\Book\\DeleteBook.cshtml",
               "RelativeDocumentMoniker": "E-Book-Pvt-Website\\Views\\Book\\DeleteBook.cshtml",
