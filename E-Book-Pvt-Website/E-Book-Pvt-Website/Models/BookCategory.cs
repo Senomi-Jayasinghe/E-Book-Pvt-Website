@@ -6,5 +6,8 @@ namespace E_Book_Pvt_Website.Models
     {
         public int category_id { get; set; }
         public int book_id { get; set; }
+
+        public Book Book { get; set; }
+        public Category Category { get; set; }
     }
 }

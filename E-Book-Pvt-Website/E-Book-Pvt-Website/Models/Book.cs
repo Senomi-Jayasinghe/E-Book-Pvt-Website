@@ -15,5 +15,6 @@ namespace E_Book_Pvt_Website.Models
         public int book_author_id { get; set; }
         public byte[] book_image { get; set; }
         public int book_quantity { get; set; }
+        public string book_category { get; set; }
     }
 }

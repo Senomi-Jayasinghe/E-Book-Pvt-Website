@@ -31,18 +31,31 @@ namespace E_Book_Pvt_Website.Controllers
 
         public IActionResult AddBooks()
         {
-            // Assuming you have a DbContext instance named `_context`
-            var authors = _context.Author
-                                  .Select(a => new { a.author_id, a.author_name })
-                                  .ToList();
+            var categories = _context.Category.ToList();
+            ViewBag.CategoryList = new SelectList(categories, "category_id", "category_name");
 
+            var authors = _context.Author.ToList();
             ViewBag.AuthorList = new SelectList(authors, "author_id", "author_name");
-            return View(new Book());
+
+            return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddBooks(Book book, IFormFile bookImage)
+        public async Task<IActionResult> AddBooks(Book book, IFormFile bookImage, int? selectedCategoryId)
         {
+            ModelState.Remove("book_image");
+            // Check ModelState errors
+            if (!ModelState.IsValid)
+            {
+                foreach (var modelState in ModelState.Values)
+                {
+                    foreach (var error in modelState.Errors)
+                    {
+                        Console.WriteLine("ModelState Error: " + error.ErrorMessage); // Or use logging
+                    }
+                }
+            }
+
             if (ModelState.IsValid)
             {
                 if (bookImage != null && bookImage.Length > 0)
@@ -50,18 +63,20 @@ namespace E_Book_Pvt_Website.Controllers
                     using (var memoryStream = new MemoryStream())
                     {
                         await bookImage.CopyToAsync(memoryStream);
-                        book.book_image = memoryStream.ToArray(); // Store the image as byte array
+                        book.book_image = memoryStream.ToArray();
                     }
                 }
 
-                // Save the book to the database
                 _context.Book.Add(book);
                 await _context.SaveChangesAsync();
+
                 return RedirectToAction("Books");
             }
 
             return View(book);
         }
+
+
         public async Task<IActionResult> BookDetails(int id)
         {
             var book = _context.Book.FirstOrDefault(b => b.book_id == id);

@@ -5,14 +5,11 @@
 }
 
 <h1>Add Books</h1>
-
 <hr />
 <form asp-action="AddBooks" enctype="multipart/form-data">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="row">
-
         <div class="col-md-6">
-
             <div class="form-group">
                 <label asp-for="book_title" class="control-label">Title:</label>
                 <input asp-for="book_title" class="form-control" />
@@ -48,20 +45,28 @@
                 <span asp-validation-for="book_author_id" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="book_quantity" class="control-label">Quantity:</label>
+                <input asp-for="book_quantity" class="form-control" type="number" />
+                <span asp-validation-for="book_quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="book_category" class="control-label">Category:</label>
+                <select asp-for="book_category" class="form-control" asp-items="ViewBag.CategoryList">
+                    <option value="">Select an Category</option>
+                </select>
+                <span asp-validation-for="book_category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="book_image" class="control-label">Image:</label>
                 <input asp-for="book_image" name="bookImage" type="file" class="form-control" />
                 <span asp-validation-for="book_image" class="text-danger"></span>
             </div>
         </div>
-        <div class="form-group mt-3">
-            <input type="submit" value="Create" class="btn btn-primary" />
-        </div>
-        <div>
-            <a asp-action="Books">Back to List</a>
-        </div>
+    </div>
+    <div class="form-group mt-3">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+    <div>
+        <a asp-action="Books">Back to List</a>
     </div>
 </form>
-</div>
-
-
-
